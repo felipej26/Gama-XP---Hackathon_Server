@@ -1,27 +1,20 @@
 function gravar() {
-    post('/usuario/', {name: 'Johnny Bravo'});
-}
+    var xhr = new XMLHttpRequest();
 
-function post(path, params, method) {
-    method = method || "post"; // Set method to post by default if not specified.
+    var nome = document.getElementById("inputNome").value;
+    var email = document.getElementById("inputEmail").value;
+    var ocupacao = document.getElementById("inputOcupacao").value;
+    var idade = document.getElementById("inputIdade").value;
 
-    // The rest of this code assumes you are not using a library.
-    // It can be made less wordy if you use one.
-    var form = document.createElement("form");
-    form.setAttribute("method", method);
-    form.setAttribute("action", path);
+    var params = "nome=" + nome + 
+        "&email=" + email +
+        "&ocupacao=" + ocupacao +
+        "&idade=" + idade;
 
-    for(var key in params) {
-        if(params.hasOwnProperty(key)) {
-            var hiddenField = document.createElement("input");
-            hiddenField.setAttribute("type", "hidden");
-            hiddenField.setAttribute("name", key);
-            hiddenField.setAttribute("value", params[key]);
-
-            form.appendChild(hiddenField);
-         }
-    }
-
-    document.body.appendChild(form);
-    form.submit();
+    xhr.open('POST', 'usuario', true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onload = function () {
+        alert(this.responseText);
+    };
+    xhr.send(params);
 }

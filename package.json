@@ -35,5 +35,13 @@
     "url": "git://github.com/felipej26/Gama-XP---Hackathon_Server.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipej26/Gama-XP---Hackathon_Server/issues"
+  },
+  "homepage": "https://github.com/felipej26/Gama-XP---Hackathon_Server#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-npm-install-all": "^0.1.0"
+  }
 }
