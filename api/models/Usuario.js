@@ -11,6 +11,20 @@ module.exports = {
     nome: {
       type: 'string',
 			size: 1000
+    },
+
+    email: {
+      type: 'string',
+			size: 1000
+    },
+
+    ocupacao: {
+      type: 'string',
+			size: 1000
+    },
+
+    idade: {
+      type: 'integer'
     }
   }
 };
