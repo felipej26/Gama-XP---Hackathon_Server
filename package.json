@@ -1,5 +1,5 @@
 {
-  "name": "Gama XP - Hackathon Server",
+  "name": "hackathon_server",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
