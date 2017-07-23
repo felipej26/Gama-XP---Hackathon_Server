@@ -32,7 +32,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/felipej26/Gama-XP---Hackathon_Server.git"
+    "url": "git://github.com/felipej26/Gama-XP---Hackathon_Server.git"
   },
   "author": "anonymous node/sails user",
   "license": ""
